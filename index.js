@@ -1,3 +1,4 @@
+////////////////////// Form /////////////////////////////////////
 // Call Item
 const formEl = document.getElementById('form');
 const submitButtonEl = document.getElementById('submitButton');
@@ -31,7 +32,29 @@ formEl.appendChild(form);
 // Create a button
 submitButtonEl.addEventListener('click', submitForm)
 
+
+// Can see changes in console
 function submitForm(event){
     console.log(firstNameInput.value);
-    
+    console.log(lastNameInput.value);
+    console.log(emailInput.value);
 }
+
+////////////////// Footer ///////////////////////////////////
+
+const footerEl = document.getElementById('footer')
+
+footerEl.setAttribute('class', 'flex-around')
+
+var footerLinks = [
+    {text: 'About us', href: "/about"},
+    {text: 'Careers', href: "/careers"},
+    {text: 'Sign Up', href: "/signup"},
+];
+
+footerLinks.forEach(link => {
+    const a = document.createElement('a')
+    a.setAttribute('href', link.href)
+    a.textContent = link.text
+    footerEl.appendChild(a)
+})

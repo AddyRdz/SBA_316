@@ -14,7 +14,7 @@ body{
     text-align: center;
     background-color: gray;
 }
-.footer{
+#footer{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -48,3 +48,9 @@ form input {
     margin-top: 200px;
     
 }
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
