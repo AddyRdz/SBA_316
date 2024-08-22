@@ -1,4 +1,8 @@
-////////////////////// Form /////////////////////////////////////
+// const confirmation = window.confirm("Do you agree to fill out the following form?");
+// console.log('Confirmation is received.');
+
+
+//////////////////// Form /////////////////////////////////////
 // Call Item
 const formEl = document.getElementById('form');
 const submitButtonEl = document.getElementById('submitButton');
@@ -11,16 +15,25 @@ const firstNameInput = document.createElement('input');
 firstNameInput.type = 'text';
 firstNameInput.id = 'firstNameLabel';
 firstNameInput.placeholder = 'First Name';
+firstNameInput.minLength = 2;
+firstNameInput.maxLength = 15;
+firstNameInput.required = true;
 // lastName
 const lastNameInput = document.createElement('input');
 lastNameInput.type = 'text';
 lastNameInput.id = 'lastNameLabel';
 lastNameInput.placeholder = 'Last Name';
+lastNameInput.minLength = 2;
+lastNameInput.maxLength = 15;
+lastNameInput.required = true;
 // email
 const emailInput = document.createElement('input');
 emailInput.type = 'email';
 emailInput.id = 'email';
 emailInput.placeholder = 'Email';
+emailInput.minLength = 2;
+emailInput.maxLength = 20;
+emailInput.required = true;
 
 // make changes to form
 form.appendChild(firstNameInput);
@@ -58,3 +71,5 @@ footerLinks.forEach(link => {
     a.textContent = link.text
     footerEl.appendChild(a)
 })
+
+console.log(`More information on the location ${window.location}`);

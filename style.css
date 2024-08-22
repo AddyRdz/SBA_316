@@ -1,18 +1,26 @@
+#root{
+    /* --body-bg:#219ebc; */
+    --navigation-bg: #8ecae6;
+    --footer-bg:#023047;
+    
+}
 body{
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center; 
     align-items: center;     
-    background-color: brown;
+    background-color: var(--body-bg);
+    background-color: #219ebc;
     padding-top: 60px;
 }
+
 .navigation{
     position: fixed;
     width: 100%;
     top: 0;
     text-align: center;
-    background-color: gray;
+    background-color: #8ecae6
 }
 #footer{
     position: fixed;
@@ -20,7 +28,8 @@ body{
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: grey;
+    background-color: #ffb703;
+    /* background-color: var(--footer-bg); */
     padding-bottom: 40px;
 }
 
@@ -54,3 +63,4 @@ form input {
     justify-content: space-around;
     align-items: center;
   }
+
