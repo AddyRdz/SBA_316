@@ -1,4 +1,17 @@
 # SBA 316 The Document Object Model
 ## Description
  - This is a simple single page application that uses DOM properties, methods, and techniques to display a simple form.
-## Sample Code
+## Technical Specifications
+- JaveScript
+- HTML
+- CSS
+- selectElementById
+- createElement
+- appendChild
+- innerText
+- style
+- event listeners & handler functions
+- Browser Object Model
+- DOM event
+- Iterate over elements to accomplish a task
+## Images

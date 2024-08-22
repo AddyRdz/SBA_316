@@ -20,17 +20,13 @@ body{
     width: 100%;
     top: 0;
     text-align: center;
-    background-color: #8ecae6
+    background-color: #8ecae6;
 }
 #footer{
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    text-align: center;
     background-color: #ffb703;
-    /* background-color: var(--footer-bg); */
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 form {
